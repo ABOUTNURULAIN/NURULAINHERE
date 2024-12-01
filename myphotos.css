@@ -1,0 +1,83 @@
+ <style>
+
+        .category h3 {
+            color: black;
+            border-bottom: 2px solid pink;
+            padding-bottom: 5px;
+            display: inline-block;
+            margin-bottom: 15px;
+            position: sticky;
+            top: 20px; 
+            left: 0;
+            z-index: 10;
+            background-color: pink;
+        }    
+
+        .category {
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+
+        .gallery-container {
+            width: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin-right: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery-container::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .gallery-container::-webkit-scrollbar-thumb {
+            background: black;
+            border-radius: 10px;
+        }
+
+        .gallery-container::-webkit-scrollbar-track {
+            background: pink;
+        }
+
+.navbar {
+    text-align: center;
+    margin-top: 20px;  
+    margin-bottom: 20px;
+}
+
+.bubble-link {
+    background-color: black;
+    color: white; 
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 30px; 
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.bubble-link:hover {
+    background-color: pink;
+    transform: scale(1.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+</style>
